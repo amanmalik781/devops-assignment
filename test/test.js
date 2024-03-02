@@ -1,5 +1,5 @@
-const assert = require('assert');
-const { calculateFactorial } = require('../src/index');
+var assert = require('assert');
+var calculateFactorial = require('../src/index');
 
 describe('Factorial Calculation', function () {
     it('should return 1 for factorial of 0', function () {

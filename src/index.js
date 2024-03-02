@@ -5,8 +5,6 @@ function calculateFactorial(n) {
     } else {
         return n * calculateFactorial(n - 1);
     }
-};
+}
 
-module.exports = {
-    calculateFactorial
-};
+module.exports = calculateFactorial;
