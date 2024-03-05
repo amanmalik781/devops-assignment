@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Factorial Calculator</title>
+    <script src="index.js"></script>
+</head>
+
+<body>
+    <h1>Factorial Calculator</h1>
+
+    <form onsubmit="calculateAndDisplayFactorial(); return false;">
+        <label for="numberInput">Enter a number:</label>
+        <input type="number" id="numberInput" required>
+        <button type="submit">Calculate Factorial</button>
+    </form>
+
+    <p id="result"></p>
+
+    <script>
+        function calculateAndDisplayFactorial() {
+            const numberInput = document.getElementById('numberInput');
+            const resultElement = document.getElementById('result');
+
+            // Get the input value
+            const inputValue = parseInt(numberInput.value);
+
+            // Check if the input is a valid number
+            if (!isNaN(inputValue)) {
+                // Calculate factorial using the provided function
+                const factorialResult = calculateFactorial(inputValue);
+
+                // Display the result
+                resultElement.innerHTML = `Factorial of ${inputValue} is: ${factorialResult}`;
+            } else {
+                // Display an error if the input is not a valid number
+                resultElement.innerHTML = 'Please enter a valid number.';
+            }
+        }
+    </script>
+</body>
+
+</html>
