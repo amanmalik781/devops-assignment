@@ -77,4 +77,7 @@ jobs:
 
       - name: SonarCloud Scan
         uses: sonarsource/sonarcloud-github-action@master
-
+        with:
+          organization: amanmalik781
+          token: 035ebfd52e59e6faf21587887629f70ec2ac47ec
+          projectBaseDir: './'
