@@ -83,6 +83,4 @@ jobs:
           args: >
             -Dsonar.organization=amanmalik781
             -Dsonar.projectKey=amanmalik781_devops-assignment
-            -Dsonar.host.url=https://sonarcloud.io/api/project_badges/measure?project=amanmalik781_devops-assignment&metric=alert_status
-            -Dsonar.login=035ebfd52e59e6faf21587887629f70ec2ac47ec
           projectBaseDir: './'
