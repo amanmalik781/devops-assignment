@@ -78,6 +78,9 @@ jobs:
       - name: SonarCloud Scan
         uses: sonarsource/sonarcloud-github-action@master
         with:
-          organization: amanmalik781
-          token: 035ebfd52e59e6faf21587887629f70ec2ac47ec
+          args: >
+            -Dsonar.organization=amanmalik781
+            -Dsonar.projectKey=amanmalik781_devops-assignment
+            -Dsonar.host.url=https://sonarcloud.io/api/project_badges/measure?project=amanmalik781_devops-assignment&metric=alert_status
+            -Dsonar.login=035ebfd52e59e6faf21587887629f70ec2ac47ec
           projectBaseDir: './'
